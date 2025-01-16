@@ -1,6 +1,6 @@
-import { useState } from "react";
 import { Link, NavLink } from "react-router-dom"
-import logo from '../assets/icons/logo.svg';
+import { useState } from "react";
+import logo from '../../assets/icons/logo.svg';
 
 
 export const Navbar = () => {
@@ -30,19 +30,20 @@ export const Navbar = () => {
             </div>
 
             <nav className="hidden sm:flex flex-col mb-5">
-                <ul className="flex w-full p-2 border border-white border-opacity-10 text-slate-300 text-xl">
-                    <li className="flex-1 flex justify-center">
+                <ul className="flex flex-row p-2 items-center justify-center border border-white border-opacity-5 text-slate-300 text-xl">
+                    <li className="flex flex-col mr-5">
                         <NavLink
                             to='/'
-                            className={({ isActive }) => isActive ? 'text-slate-200 font-semibold pointer-events-none' : undefined}
+                            className={({ isActive }) => isActive ? 'text-yellow-600 font-semibold pointer-events-none' : undefined}
                         >
                             HOME
                         </NavLink>
                     </li>
-                    <li className="flex-1 flex justify-center">
+                    <li className="flex flex-col ml-5">
                         <NavLink
-                            to='/starships-page'
-                            className={({ isActive }) => isActive ? 'text-slate-200 font-semibold pointer-events-none' : undefined}
+                            to='/starships'
+                            className={({ isActive }) => isActive ? 'text-yellow-600 font-semibold pointer-events-none' : undefined}
+                            onClick={handleLinkClick}
                         >
                             STARSHIPS
                         </NavLink>
@@ -52,10 +53,10 @@ export const Navbar = () => {
 
             <nav className={`sm:hidden ${isMenuOpen ? 'block' : 'hidden'} absolute top-full left-0 w-full bg-black rounded-b-lg z-20`}>
                 <ul className="flex flex-col items-center space-y-4 text-slate-300 text-xl py-4">
-                    <li>
+                <li>
                         <NavLink
                             to='/'
-                            className={({ isActive }) => isActive ? 'text-slate-200 font-semibold' : undefined}
+                            className={({ isActive }) => isActive ? 'text-yellow-600 font-semibold' : undefined}
                             onClick={handleLinkClick}
                         >
                             HOME
@@ -63,8 +64,8 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <NavLink
-                            to='/starships-page'
-                            className={({ isActive }) => isActive ? 'text-slate-200 font-semibold' : undefined}
+                            to='/starships'
+                            className={({ isActive }) => isActive ? 'text-yellow-600 font-semibold' : undefined}
                             onClick={handleLinkClick}
                         >
                             STARSHIPS

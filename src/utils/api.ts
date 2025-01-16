@@ -1,0 +1,1 @@
+export const apiStarships = "https://swapi.dev/api/starships";
