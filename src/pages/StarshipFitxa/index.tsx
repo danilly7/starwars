@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useStarshipsContext } from "../../context/StarshipsContext";
 import { useStarshipImage } from "../../hooks/useStarshipImage";
+import { BackButton } from "../../components/BackButton";
 
 export const Fitxa = () => {
     const { id } = useParams<{ id: string }>();
@@ -69,12 +70,7 @@ export const Fitxa = () => {
             </div>
 
             <div className="w-full text-center my-5">
-                <button
-                    onClick={handleRedirectToStarships}
-                    className="bg-black text-yellow-600 font-semibold border border-yellow-600 py-2 px-4 rounded hover:bg-yellow-600 hover:bg-opacity-95 hover:text-black"
-                >
-                    Back to Starships' list
-                </button>
+                <BackButton onClick={handleRedirectToStarships} text="Back to Starship's List" />
             </div>
 
         </>

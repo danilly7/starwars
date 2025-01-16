@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 export interface Starship {
     id: number;
     name: string;
+
     model: string;
     starship_class?: string;
 
@@ -29,6 +30,7 @@ export interface StarshipsContextProps {
     loading: boolean;
     error: Error | null;
     getStarshipById: (id: number) => Starship | undefined;
+    loadMore: () => void;
 };
 
 export interface StarshipsProviderProps {

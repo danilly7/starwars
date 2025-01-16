@@ -1,7 +1,7 @@
 import { Routes, Route} from 'react-router-dom';
-import { Fitxa } from '../components/StarshipFitxa';
-import { Home } from '../components/Home';
-import { StarshipsList } from '../components/StarshipsList';
+import { Fitxa } from '../pages/StarshipFitxa';
+import { Home } from '../pages/Home';
+import { StarshipsList } from '../pages/StarshipsList';
 
 export const AppRoutes = () => {
     return (
