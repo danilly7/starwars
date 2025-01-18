@@ -17,7 +17,7 @@ function App() {
           </AppProviders>
         </main>
         <footer>
-          <div className="flex justify-center items-center h-16">
+          <div className="flex justify-center items-center h-16 mt-12">
             <p>© 2025 StarWars. May the Force be with you.</p>
           </div>
         </footer>
