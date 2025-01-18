@@ -29,6 +29,7 @@ export const StarshipsProvider = ({ children }: { children: ReactNode }) => {
       setPage((prev) => prev + 1);
     }
   };
+
   return (
     <StarshipsContext.Provider
       value={{

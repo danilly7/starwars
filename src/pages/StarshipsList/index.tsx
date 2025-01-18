@@ -2,15 +2,30 @@ import { useNavigate } from "react-router-dom";
 import { useStarshipsContext } from "../../context/StarshipsContext";
 import { Starship } from "../../types/starshipsTypes";
 import { ScrollToTopButton } from "../../components/ScrollTopButton";
+import { useCallback, useEffect } from "react";
 
 export function StarshipsList() {
-    const { starships, loading, error } = useStarshipsContext();
+    const { starships, loading, error, loadMore } = useStarshipsContext();
     const navigate = useNavigate();
 
     const uniqueStarships = starships.filter(
-        (starship, index, self) =>
-            index === self.findIndex((s) => s.url === starship.url) 
+        (checkingStarship, index, starshipsList) =>
+            index === starshipsList.findIndex((s) => s.url === checkingStarship.url)
     );
+
+    const handleScroll = useCallback(() => {
+        const bottom =
+            window.innerHeight + document.documentElement.scrollTop >=
+            document.documentElement.offsetHeight - 100;
+        if (bottom && !loading) {
+            loadMore();
+        }
+    }, [loading, loadMore]);
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [handleScroll]);
 
     return (
         <div>
@@ -35,6 +50,7 @@ export function StarshipsList() {
                     );
                 })}
             </ul>
+            {loading && <p className="text-center text-white">Loading more starships...</p>}
             <ScrollToTopButton />
         </div>
     );
