@@ -38,7 +38,7 @@ export const Register = () => {
     };
 
     if (userLoggedIn) {
-        return <Navigate to="/" replace />;
+        return <Navigate to="/starships" replace />;
     }
 
     return (

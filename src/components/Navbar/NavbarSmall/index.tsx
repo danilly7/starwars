@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { NavbarProps } from "../../../types/navbarType";
+import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
 
 export const NavbarSmall = ({ userLoggedIn, currentUser, handleLogout, isMenuOpen, handleLinkClick }: NavbarProps) => {
     return (
@@ -23,6 +24,9 @@ export const NavbarSmall = ({ userLoggedIn, currentUser, handleLogout, isMenuOpe
                         STARSHIPS
                     </NavLink>
                 </li>
+
+                <hr className="my-4 w-3/4 border-t border-white border-opacity-20" />
+
                 {!userLoggedIn ? (
                     <>
                         <li>
@@ -56,6 +60,20 @@ export const NavbarSmall = ({ userLoggedIn, currentUser, handleLogout, isMenuOpe
                         </li>
                         <li className="text-yellow-600">
                             <span>{currentUser?.email}</span>
+                        </li>
+
+                        <hr className="my-4 w-3/4 border-t border-white border-opacity-20" />
+
+                        <li className="flex space-x-4 pb-10">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                                <FaInstagram size={24} />
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                                <FaFacebook size={24} />
+                            </a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                                <FaYoutube size={24} />
+                            </a>
                         </li>
                     </>
                 )}
