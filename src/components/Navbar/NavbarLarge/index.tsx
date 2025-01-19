@@ -7,13 +7,13 @@ export const NavbarLarge = ({ userLoggedIn, currentUser, handleLogout }: NavbarP
         <>
             <div className="hidden sm:flex justify-between items-center p-2 text-slate-300 ml-5">
                 <div className="flex space-x-4">
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                    <a href="https://www.instagram.com/starwars/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
                         <FaInstagram size={24} />
                     </a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                    <a href="https://www.facebook.com/starwars.es/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
                         <FaFacebook size={24} />
                     </a>
-                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                    <a href="https://www.youtube.com/@StarWars" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
                         <FaYoutube size={24} />
                     </a>
                 </div>

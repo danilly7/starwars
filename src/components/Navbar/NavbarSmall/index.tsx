@@ -47,6 +47,20 @@ export const NavbarSmall = ({ userLoggedIn, currentUser, handleLogout, isMenuOpe
                                 REGISTER
                             </NavLink>
                         </li>
+                        
+                        <hr className="my-4 w-3/4 border-t border-white border-opacity-20" />
+
+                        <li className="flex space-x-4 pb-10">
+                            <a href="https://www.instagram.com/starwars/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                                <FaInstagram size={24} />
+                            </a>
+                            <a href="https://www.facebook.com/starwars.es/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                                <FaFacebook size={24} />
+                            </a>
+                            <a href="https://www.youtube.com/@StarWars" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                                <FaYoutube size={24} />
+                            </a>
+                        </li>
                     </>
                 ) : (
                     <>
@@ -65,13 +79,13 @@ export const NavbarSmall = ({ userLoggedIn, currentUser, handleLogout, isMenuOpe
                         <hr className="my-4 w-3/4 border-t border-white border-opacity-20" />
 
                         <li className="flex space-x-4 pb-10">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                            <a href="https://www.instagram.com/starwars/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
                                 <FaInstagram size={24} />
                             </a>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                            <a href="https://www.facebook.com/starwars.es/" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
                                 <FaFacebook size={24} />
                             </a>
-                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
+                            <a href="https://www.youtube.com/@StarWars" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-yellow-600">
                                 <FaYoutube size={24} />
                             </a>
                         </li>
