@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
-import { StarshipsProvider } from "../context/StarshipsContext";
+import { StarshipsProvider } from "../context/starshipsContext";
+import { AuthProvider } from "../context/authContext";
 
 interface AppProvidersProps {
     children: ReactNode;
@@ -7,8 +8,10 @@ interface AppProvidersProps {
 
 export const AppProviders: React.FC<AppProvidersProps> = ({ children }) => {
     return (
-        <StarshipsProvider>
-            {children}
-        </StarshipsProvider>
+        <AuthProvider>
+            <StarshipsProvider>
+                {children}
+            </StarshipsProvider>
+        </AuthProvider>
     );
 };

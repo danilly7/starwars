@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { useStarshipsContext } from "../../context/StarshipsContext";
+import { useStarshipsContext } from "../../context/starshipsContext";
 import { useStarshipImage } from "../../hooks/useStarshipImage";
 import { BackButton } from "../../components/BackButton";
 

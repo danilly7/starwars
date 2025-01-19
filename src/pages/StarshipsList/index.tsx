@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useStarshipsContext } from "../../context/StarshipsContext";
+import { useStarshipsContext } from "../../context/starshipsContext";
 import { Starship } from "../../types/starshipsTypes";
 import { ScrollToTopButton } from "../../components/ScrollTopButton";
 import { useCallback, useEffect } from "react";

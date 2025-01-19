@@ -24,7 +24,7 @@ export const ScrollToTopButton = () => {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-5 right-5 p-3 bg-black text-yellow-600 font-extrabold border border-yellow-600 py-2 px-4 hover:bg-yellow-500 hover:bg-opacity-90 hover:text-black rounded-full"
+        className="fixed bottom-9 right-9 w-14 h-14 bg-black text-yellow-500 font-extrabold border-2 border-yellow-400 text-2xl hover:bg-yellow-400 hover:bg-opacity-90 hover:text-black rounded-full flex items-center justify-center hover:font-bold"
         aria-label="Scroll to top"
       >
         ↑

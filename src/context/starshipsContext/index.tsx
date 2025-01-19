@@ -1,7 +1,7 @@
 import { createContext, useContext, ReactNode, useState, useEffect } from 'react';
-import { StarshipsContextProps, Starship } from "../types/starshipsTypes";
-import { useFetch } from '../hooks/useFetch';
-import { apiStarships } from '../utils/api';
+import { StarshipsContextProps, Starship } from "../../types/starshipsTypes";
+import { useFetch } from '../../hooks/useFetch';
+import { apiStarships } from '../../utils/api';
 
 const StarshipsContext = createContext<StarshipsContextProps | undefined>(undefined);
 
