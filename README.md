@@ -1,4 +1,4 @@
-# SPRING 7 - S7.Star Wars (React)
+# SPRINT 7 - S7.Star Wars (React)
 ## Descripción del proyecto
 
 Este proyecto es una aplicación web que permite explorar el mundo de las naves espaciales de Star Wars. A través de una interfaz interactiva, los usuarios pueden ver información detallada sobre las distintas naves. La aplicación se conecta a una API para obtener los datos más actualizados, ofreciendo una experiencia enriquecedora para los fanáticos de la saga.
