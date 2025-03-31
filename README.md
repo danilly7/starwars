@@ -1,4 +1,4 @@
-# SPRINT 7 - S7.Star Wars (React)
+# Star Wars (React)
 ## Descripción del proyecto
 
 Este proyecto es una aplicación web que permite explorar el mundo de las naves espaciales de Star Wars. A través de una interfaz interactiva, los usuarios pueden ver información detallada sobre las distintas naves. La aplicación se conecta a una API para obtener los datos más actualizados, ofreciendo una experiencia enriquecedora para los fanáticos de la saga.
@@ -74,8 +74,8 @@ Este proyecto es una aplicación web que permite explorar el mundo de las naves 
 1. Clona el repositorio
 
    ```bash
-   git clone https://github.com/danilly7/s7.starWars.git
-   cd s7.starWars
+   git clone https://github.com/danilly7/starwars.git
+   cd starwars
    ``` 
    
 2. Asegúrate de tener Node.js instalado
